@@ -1,0 +1,31 @@
+.contact textarea{
+    width: 80%;
+    min-height: 100px;
+    margin: 20px auto;
+}
+
+.contact button{
+    display: block;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 0.5%;
+    font-size: 20px;
+    margin: 0 20% 5% auto;
+    cursor: pointer;
+    transition: 0.2sek;
+}
+
+.contact button:hover{
+    background-color: black;
+    color:white
+}
+.findme li{
+    line-height: 30px;
+    list-style-type: none;
+    padding: 10px;
+}
+h5 {
+    float: left;
+    margin-right: 10px;
+    line-height: 30px;
+}

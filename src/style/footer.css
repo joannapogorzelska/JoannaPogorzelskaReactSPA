@@ -1,0 +1,7 @@
+.footer i{
+    float: right;
+    margin-right: 5px;
+}
+.footer p{
+    line-height: 30px;
+}

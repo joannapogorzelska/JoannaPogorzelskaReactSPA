@@ -1,0 +1,62 @@
+div.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 90%;
+    margin:0 auto;
+    background-color: grey;
+}
+header{
+    flex-basis: 40vh;
+    background-color: lightgrey;
+}
+
+.footer{
+    text-align: center;
+}
+@media (max-width: 1023px) {
+    header {
+        flex-basis: 30vh;
+    }
+    main {
+        background-color: lightpink;
+       flex-basis: 60vh;
+    }
+
+    aside {
+        display: block;
+        text-align: center;
+        background-color:lightpink;
+        position: fixed;
+        top: 0%;
+    }
+
+    section {
+        margin-top: 20px;
+
+    }
+    .footer {
+        max-height: 10vh;
+}}
+
+
+@media (min-width: 1024px) {
+ main { 
+     display: flex;
+     flex-grow: 1;
+     background-color: lightpink;
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
+
+ aside {
+       text-align: center;
+       background-color:lightpink;
+       min-width: 20%;
+ }
+
+ section {
+     flex-grow: 1;
+     min-width: 80%;
+}
+}

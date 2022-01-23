@@ -1,0 +1,39 @@
+.navigation ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: left;
+}
+.navigation li{
+    float: left;
+    padding: 5px;
+}
+nav.navigation a{
+    display: inline-block;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.navigation a.active {
+    color: aqua;  
+}
+@media (min-width: 1024px) {
+
+.navigation li {
+    float: none;
+    padding: 2px;
+}
+
+nav.navigation a {
+    display: block;
+    font-size: 20px;
+    transform: 0.3s;
+}
+
+nav.navigation li:hover {
+    transform: translateX(20px);
+}
+nav.navigation a.active {
+    border-left: 5px red solid;
+}
+}
