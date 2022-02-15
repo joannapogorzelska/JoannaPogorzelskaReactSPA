@@ -1,10 +1,23 @@
 import React from 'react'
+import { Route, Routes, useParams } from 'react-router-dom'
 
-function Article(props) {
-    
+import ArticleID from './ArticleID'
+
+
+function Article() {
+    const params = useParams();
+
+
     
     return (
-        <div><h1>Aktualności:</h1></div>
+        <div>
+            <Routes> 
+                <Route
+                    path={`/article/${params.articleId}`}>
+                </Route>
+            </Routes>
+            <ArticleID/>
+        </div>
 )
 }
 
